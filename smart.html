@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMART BOGOTÁ - Dashboard IoT</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>SMART BOGOTÁ</h1>
+    <p>Optimización de servicios públicos mediante IoT, IA y computación en la nube</p>
+  </header>
+
+  <main>
+    <section class="dashboard">
+      <div class="card">
+        <h2>CO₂ (ppm)</h2>
+        <div id="co2" class="value">--</div>
+      </div>
+
+      <div class="card">
+        <h2>Consumo Energético (kWh)</h2>
+        <div id="energy" class="value">--</div>
+      </div>
+
+      <div class="card">
+        <h2>Temperatura (°C)</h2>
+        <div id="temp" class="value">--</div>
+      </div>
+
+      <div class="card">
+        <h2>Índice de Ruido (dB)</h2>
+        <div id="noise" class="value">--</div>
+      </div>
+
+      <div class="card">
+        <h2>Calidad del Aire</h2>
+        <div id="airQuality" class="value">--</div>
+      </div>
+    </section>
+
+    <section class="grafico">
+      <h2>Evolución del Consumo Energético</h2>
+      <canvas id="energyChart"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SMART BOGOTÁ | Proyecto de Grado - UNAD</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
